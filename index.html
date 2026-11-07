@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-HK">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>對街 fiveathree｜作品集</title>
+<meta name="description" content="fiveathree 用 AI 做嘅網站、工具同網頁遊戲，一頁睇晒，撳入去即玩。">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="對街 fiveathree｜作品集">
+<meta property="og:description" content="網站、工具同網頁遊戲，一頁睇晒，撳入去即玩。">
+<meta property="og:url" content="https://fiveathree.github.io/allstuff/">
+<meta property="og:image" content="https://fiveathree.github.io/allstuff/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  :root { --bg:#14121c; --card:#1f1c2b; --line:#2e2a40; --text:#f1eef8; --mute:#a39fb6; --acc:#ffb547; --game:#7fd6c2; }
+  * { box-sizing:border-box; margin:0; }
+  body { font-family:system-ui,-apple-system,"PingFang TC","Noto Sans TC","Microsoft JhengHei",sans-serif;
+         background:var(--bg); color:var(--text); min-height:100dvh; display:flex; flex-direction:column;
+         padding:12px clamp(12px,3vw,32px); gap:8px; }
+  header { width:100%; max-width:1100px; margin:0 auto; display:flex; align-items:baseline; gap:12px; flex-wrap:wrap; }
+  h1 { font-size:22px; letter-spacing:.5px; }
+  h1 span { color:var(--acc); }
+  header p { color:var(--mute); font-size:13px; }
+  main { flex:1; display:grid; grid-template-columns:1fr 1fr; grid-auto-rows:minmax(44px,1fr); gap:6px;
+         width:100%; max-width:1100px; margin:0 auto; }
+  a.card { display:flex; align-items:center; gap:12px; padding:4px 12px; background:var(--card);
+           border:1px solid var(--line); border-radius:12px; color:inherit; text-decoration:none; min-width:0;
+           transition:transform .12s, border-color .12s; }
+  a.card:hover, a.card:focus-visible { transform:translateY(-2px); border-color:var(--acc); outline:none; }
+  a.card img { width:34px; height:34px; border-radius:9px; flex:none; object-fit:contain; }
+  .txt { min-width:0; }
+  .name { font-weight:700; font-size:15px; display:flex; gap:6px; align-items:center; }
+  .tag { font-size:11px; font-weight:600; padding:1px 6px; border-radius:6px; background:#ffb54722; color:var(--acc); }
+  .tag.g { background:#7fd6c222; color:var(--game); }
+  .desc { color:var(--mute); font-size:12.5px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+  footer { text-align:center; color:var(--mute); font-size:12px; }
+  @media (max-width:560px) {
+    a.card { flex-direction:column; text-align:center; gap:3px; padding:8px 6px; }
+    .name { flex-direction:column; gap:2px; font-size:14px; }
+    .tag { display:none; }
+    .txt { width:100%; }
+    .desc { font-size:11.5px; max-width:100%; }
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>對街 <span>fiveathree</span></h1>
+  <p>用 AI 做嘅網站、工具同網頁遊戲・撳入去即玩</p>
+</header>
+
+<main>
+  <a class="card" href="https://fiveathree.github.io/strangecatstudio/"><img src="icons/strangecatstudio.png" alt=""><div class="txt"><div class="name">奇怪貓工作室<span class="tag">網站</span></div><div class="desc">手工宇宙玻璃、玻璃鑽石飾品同紀念琉璃訂製</div></div></a>
+  <a class="card" href="https://fiveathree.github.io/threesun/"><img src="icons/threesun.svg" alt=""><div class="txt"><div class="name">五行石室<span class="tag">網站</span></div><div class="desc">水晶網店，八字、塔羅、星盤等占算配水晶</div></div></a>
+  <a class="card" href="https://fiveathree.github.io/bottlesense/"><img src="icons/bottlesense.png" alt=""><div class="txt"><div class="name">BottleSense<span class="tag">工具</span></div><div class="desc">影酒標，AI 話你該開、該飲、該藏定該送</div></div></a>
+  <a class="card" href="https://bizidea.fiveathree.workers.dev/"><img src="icons/bizidea.svg" alt=""><div class="txt"><div class="name">BizIdea 商機雷達<span class="tag">工具</span></div><div class="desc">12 個地區每日熱搜同熱門話題，搵生意機會</div></div></a>
+  <a class="card" href="https://fiveathree.github.io/todayeat/"><img src="icons/todayeat.svg" alt=""><div class="txt"><div class="name">今日吃甚麼<span class="tag">工具</span></div><div class="desc">撳一下，輪盤幫你揀附近一間餐廳</div></div></a>
+  <a class="card" href="https://fiveathree.github.io/bball/"><img src="icons/bball.svg" alt=""><div class="txt"><div class="name">AI 籃球動作實驗室<span class="tag">工具</span></div><div class="desc">上載籃球片，骨架分析同示範動作並排對照</div></div></a>
+  <a class="card" href="https://fiveathree.github.io/ecosysbottle/"><img src="icons/ecosysbottle.svg" alt=""><div class="txt"><div class="name">生態瓶實驗室<span class="tag">工具</span></div><div class="desc">3D 生態瓶同水族箱模擬</div></div></a>
+  <a class="card" href="https://fiveathree.github.io/catstrangestudio/"><img src="icons/catstrangestudio.svg" alt=""><div class="txt"><div class="name">宇宙玻璃 Studio 3D<span class="tag">工具</span></div><div class="desc">工作室室內設計 3D 預覽同裝修規劃</div></div></a>
+  <a class="card" href="https://fiveathree.github.io/walking/"><img src="icons/walking.svg" alt=""><div class="txt"><div class="name">黃大仙漫步<span class="tag">工具</span></div><div class="desc">第一身視角喺 3D 城市模型入面行街</div></div></a>
+  <a class="card" href="https://fiveathree.github.io/OpenStreetZombie/"><img src="icons/OpenStreetZombie.svg" alt=""><div class="txt"><div class="name">屍城戰線<span class="tag g">遊戲</span></div><div class="desc">喪屍沿住高雄真實街道湧過嚟，帶隊友殺出重圍</div></div></a>
+  <a class="card" href="https://fiveathree.github.io/pkparking/"><img src="icons/pkparking.svg" alt=""><div class="txt"><div class="name">泊車地獄<span class="tag g">遊戲</span></div><div class="desc">香港地庫窄位泊車，定台灣騎樓機車格</div></div></a>
+  <a class="card" href="https://fiveathree.github.io/XIFM/"><img src="icons/XIFM.svg" alt=""><div class="txt"><div class="name">傳奇十一人<span class="tag g">遊戲</span></div><div class="desc">足球經理 × 抽卡，抽歷代球星打聯賽同盃賽</div></div></a>
+  <a class="card" href="https://fiveathree.github.io/ashenbell/"><img src="icons/ashenbell.png" alt=""><div class="txt"><div class="name">燼鐘 Ashen Bell<span class="tag g">遊戲</span></div><div class="desc">網頁暗黑動作角色扮演遊戲</div></div></a>
+  <a class="card" href="https://fiveathree.github.io/simtower/"><img src="icons/simtower.svg" alt=""><div class="txt"><div class="name">天際大廈<span class="tag g">遊戲</span></div><div class="desc">起樓、放租、安排電梯，經營到 TOWER 級</div></div></a>
+  <a class="card" href="https://fiveathree.github.io/mb/"><img src="icons/mb.svg" alt=""><div class="txt"><div class="name">鐵騎風雲<span class="tag g">遊戲</span></div><div class="desc">騎馬衝鋒、四方向劈砍、帶兵打天下</div></div></a>
+  <a class="card" href="https://fiveathree.github.io/San/"><img src="icons/San.svg" alt=""><div class="txt"><div class="name">三國亂世錄<span class="tag g">遊戲</span></div><div class="desc">以任何武將身分出發嘅三國策略遊戲</div></div></a>
+  <a class="card" href="https://fiveathree.github.io/fairymagic/"><img src="icons/fairymagic.svg" alt=""><div class="txt"><div class="name">仙魔雙修<span class="tag g">遊戲</span></div><div class="desc">修真 × 魔法學院，融合屬性自創武學</div></div></a>
+  <a class="card" href="https://fiveathree.github.io/dan/"><img src="icons/dan.svg" alt=""><div class="txt"><div class="name">九轉丹房<span class="tag g">遊戲</span></div><div class="desc">修仙煉丹模擬器</div></div></a>
+  <a class="card" href="https://fiveathree.github.io/cookrice/"><img src="icons/cookrice.svg" alt=""><div class="txt"><div class="name">煮飯仔<span class="tag g">遊戲</span></div><div class="desc">揀食材、幫手同煮法，按次序落鑊睇下煮成點</div></div></a>
+  <a class="card" href="https://fiveathree.github.io/zomibee/"><img src="icons/zomibee.svg" alt=""><div class="txt"><div class="name">屍城日誌<span class="tag g">遊戲</span></div><div class="desc">喪屍末日回合制生存，招募倖存者撐過每一晚</div></div></a>
+  <a class="card" href="https://fiveathree.github.io/twnightmarket/"><img src="icons/twnightmarket.svg" alt=""><div class="txt"><div class="name">台幣夜市遊戲街<span class="tag g">遊戲</span></div><div class="desc">射氣球、套圈圈、開攤賣雞排珍奶</div></div></a>
+  <a class="card" href="https://fiveathree.github.io/sandefense/"><img src="icons/sandefense.svg" alt=""><div class="txt"><div class="name">長坂坡字陣<span class="tag g">遊戲</span></div><div class="desc">三國合字塔防，趙雲救阿斗</div></div></a>
+  <a class="card" href="https://fiveathree.github.io/snake/"><img src="icons/snake.svg" alt=""><div class="txt"><div class="name">截蛇大亂鬥<span class="tag g">遊戲</span></div><div class="desc">貪食蛇大亂鬥，截住人哋條蛇食佢</div></div></a>
+</main>
+
+<footer>© fiveathree</footer>
+</body>
+</html>
